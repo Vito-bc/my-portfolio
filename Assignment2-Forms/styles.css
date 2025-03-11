@@ -1,0 +1,59 @@
+/* Main styling for the page background */
+body {
+    font-family: Arial, sans-serif;
+    background: url('https://images.unsplash.com/photo-1608138274991-9bfefcfc91c5?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* BMI calculator elements */
+.container {
+    background-color: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    width: 300px;
+    text-align: center;
+}
+
+/* Styling for number input fields */
+input[type="number"] {
+    padding: 8px;
+    margin: 10px 0;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Button styling for calculating BMI */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Display area for the result */
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Icon image styling */
+img {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+}
