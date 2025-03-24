@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Canvas Scene with Forms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Interactive Canvas Scene</h1>
+
+  <!-- FULL PAGE BACKGROUND SELECTION -->
+  <div class="form-group">
+    <h2>Choose Page Background</h2>
+    <label>
+      <input type="radio" name="pageBgChoice" value="bg1" checked>
+      Page Background 1
+    </label>
+    <label>
+      <input type="radio" name="pageBgChoice" value="bg2">
+      Page Background 2
+    </label>
+    <label>
+      <input type="radio" name="pageBgChoice" value="bg3">
+      Page Background 3
+    </label>
+  </div>
+
+  <!-- CANVAS BACKGROUND SELECTION -->
+  <div class="form-group">
+    <h2>Choose Canvas Background</h2>
+    <label>
+      <input type="radio" name="bgChoice" value="bg1" checked>
+      Background 1
+    </label>
+    <label>
+      <input type="radio" name="bgChoice" value="bg2">
+      Background 2
+    </label>
+    <label>
+      <input type="radio" name="bgChoice" value="bg3">
+      Background 3
+    </label>
+  </div>
+
+  <!-- SLIDER: Move Character -->
+  <div class="form-group">
+    <h2>Move the Character</h2>
+    <input
+      type="range"
+      id="positionSlider"
+      min="0"
+      max="400"
+      value="200"
+    >
+  </div>
+
+  <!-- CHECKBOXES: Toggle Items -->
+  <div class="form-group">
+    <h2>Toggle Items</h2>
+    <label>
+      <input type="checkbox" id="toggleItem1" checked>
+      Show/Hide Item 1
+    </label>
+    <label>
+      <input type="checkbox" id="toggleItem2" checked>
+      Show/Hide Item 2
+    </label>
+    <label>
+      <input type="checkbox" id="toggleItem3" checked>
+      Show/Hide Item 3
+    </label>
+  </div>
+
+  <!-- BUTTONS: Trigger Sound Effects -->
+  <div class="form-group">
+    <h2>Sound Effects</h2>
+    <button id="soundBtn1">Play Sound 1</button>
+    <button id="soundBtn2">Play Sound 2</button>
+    <button id="soundBtn3">Play Sound 3</button>
+  </div>
+
+  <!-- CANVAS ELEMENT -->
+  <canvas id="myCanvas" width="600" height="400"></canvas>
+
+  <!-- JAVASCRIPT FILE -->
+  <script src="script.js"></script>
+</body>
+</html>

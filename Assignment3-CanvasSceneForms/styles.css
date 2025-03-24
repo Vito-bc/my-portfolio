@@ -1,0 +1,20 @@
+/* Make the page background extend from edge to edge */
+body {
+  margin: 0;               /* Remove default margin so background covers the whole screen */
+  padding: 0;              /* Remove default padding if any */
+  font-family: Arial, sans-serif;
+  color: white;            /* Make all text white by default */
+  background-color: #222;  /* Fallback color if no image is set or fails to load */
+}
+
+/* Spacing for your form sections */
+.form-group {
+  margin: 20px;
+}
+
+/* Style the canvas */
+canvas {
+  display: block;
+  margin: 20px auto;       /* Center the canvas horizontally */
+  border: 1px solid #000;  /* Black border around the canvas */
+}
