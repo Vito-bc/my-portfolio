@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NYC Borough Populations Chart</title>
+  <!-- External stylesheet that handles layout -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Defer loading of our custom chart logic -->
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <h2>NYC Borough Populations (2020 Census)</h2>
+
+  <!-- Canvas elements act as drawing surfaces for Chart.js -->
+  <canvas id="popDoughnut" width="400" height="400"></canvas>
+  <canvas id="popBar"     width="400" height="400"></canvas>
+</body>
+</html>
