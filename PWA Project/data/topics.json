@@ -1,0 +1,22 @@
+{
+  "planets": [
+    {
+      "title": "Mars",
+      "description": "Mars is the fourth planet from the Sun and is often called the Red Planet due to its reddish appearance caused by iron oxide.",
+      "image": "images/Mars.jpg",
+      "audio": "audio/mars.mp3"
+    },
+    {
+      "title": "Jupiter",
+      "description": "Jupiter is the largest planet in the solar system. It is a gas giant with a massive magnetic field and dozens of moons.",
+      "image": "images/Jupiter.jpg",
+      "audio": "audio/jupiter.mp3"
+    },
+    {
+      "title": "Saturn",
+      "description": "Saturn is the sixth planet from the Sun, known for its prominent ring system made mostly of ice particles.",
+      "image": "images/Saturn.jpg",
+      "audio": "audio/saturn.mp3"
+    }
+  ]
+}
