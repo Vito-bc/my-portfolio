@@ -11,6 +11,7 @@ fetch("data/topics.json")
   .then((data) => {
     const planets = data.planets;
     createButtons(planets);
+    displayPlanet(planets[0]);
   })
   .catch((error) => {
     console.error("Failed to load topics.json:", error);
@@ -37,7 +38,27 @@ function displayPlanet(planet) {
   img.onload = () => {
     const imgX = (canvas.width - img.width) / 2;
     const imgY = 50;
-    ctx.drawImage(img, imgX, imgY);
+    const maxWidth = canvas.width * 0.9;
+const maxHeight = canvas.height * 0.6;
+let drawWidth = img.width;
+let drawHeight = img.height;
+
+// Scale image down if too large
+if (drawWidth > maxWidth) {
+  const scale = maxWidth / drawWidth;
+  drawWidth *= scale;
+  drawHeight *= scale;
+}
+if (drawHeight > maxHeight) {
+  const scale = maxHeight / drawHeight;
+  drawWidth *= scale;
+  drawHeight *= scale;
+}
+
+const drawX = (canvas.width - drawWidth) / 2;
+const drawY = 30; // avoid top gray bar
+
+ctx.drawImage(img, drawX, drawY, drawWidth, drawHeight);
 
     // Draw title and description
     ctx.fillStyle = "#ffffff";

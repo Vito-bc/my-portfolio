@@ -1,6 +1,12 @@
 {
   "planets": [
     {
+      "title": "Solar System",
+      "description": "Explore the planets of our solar system. Click a planet below to learn more.",
+      "image": "images/SolarSystem.jpg",
+      "audio": "audio/SolarSystem.mp3"
+    },
+    {
       "title": "Mars",
       "description": "Mars is the fourth planet from the Sun and is often called the Red Planet due to its reddish appearance caused by iron oxide.",
       "image": "images/Mars.jpg",
